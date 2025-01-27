@@ -55,16 +55,30 @@ body {
 }
 
 .todo .fa-plus {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   background: #000;
   color: #d4a373;
   border-radius: 50%;
   padding: 0.8rem;
   margin-bottom: 0.3rem;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.todo .fa-plus-rotate {
+  font-size: 1.4rem;
+  background: #000;
+  color: #d4a373;
+  border-radius: 50%;
+  padding: 0.8rem;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+  transition: 0.3s;
+  transform: rotate(45deg);
 }
 
 .todo-form {
+  display: none;
   width: 100%;
   margin: 1rem 0;
   color: #fff;
@@ -77,13 +91,13 @@ body {
 }
 
 .todo-form .input-bar {
-  width: 100%;
+  width: 78%;
 }
 
 .todo-form input[type="text"] {
   padding: 0.5rem;
   font-size: 1.1rem;
-  width: 85%;
+  width: 100%;
   border-radius: 0.3rem;
   background: #fffaff;
   outline: none;
@@ -94,7 +108,7 @@ body {
   color: #fff;
   background: #dda15e;
   padding: 0.5rem;
-  width: 18%;
+  width: 20%;
   outline: 0;
   border-radius: 0.3rem;
   border: none;
@@ -109,23 +123,31 @@ body {
 
 .todo-list {
   width: 50%;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  background: #415a77;
 }
 
 .task {
+  width: 100%;
+  list-style-type: none;
+}
+
+.task li {
+  color: #fefae0;
+  background: #415a77;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fefae0;
 }
 
-.task h2 {
+.task li {
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
-.task .icons i {
+.task i {
   font-size: 1.4rem;
   margin: 0 0.3rem;
   color: #fefae0;
@@ -134,5 +156,10 @@ body {
 
 .task .icons .fa-trash:hover {
   color: tomato;
+  transition: 0.3s;
+}
+
+.task .icons .fa-circle-check:hover {
+  color: greenyellow;
   transition: 0.3s;
 }
