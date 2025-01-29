@@ -154,12 +154,20 @@ body {
   cursor: pointer;
 }
 
-.task .icons .fa-trash:hover {
+.task .fa-trash:hover {
   color: tomato;
   transition: 0.3s;
 }
 
-.task .icons .fa-circle-check:hover {
+.task .fa-circle-check:hover {
   color: greenyellow;
   transition: 0.3s;
+}
+
+.fa-circle-check.completed {
+  color: greenyellow;
+}
+
+li.completed span {
+  text-decoration: line-through;
 }

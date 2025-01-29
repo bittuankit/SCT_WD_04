@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="./script.js" defer></script>
+    <script src="./script.js" type="module" defer></script>
 </head>
 
 <body>
@@ -22,23 +22,14 @@
             <div class="todo-form">
                 <form method="post">
                     <div class="input-bar">
-                        <input type="text" name="task" id="task" placeholder="Type your task here">
+                        <input type="text" name="task" id="taskInput" placeholder="Type your task here" required>
                     </div>
-                    <input type="submit" value="Add">
+                    <input id="submit" type="submit" value="Add">
                 </form>
             </div>
         </div>
         <div class="todo-list">
             <ul class="task">
-                <li>Complete the task one till night.<div><i class="fa-regular fa-circle-check"></i><i
-                            class="fa-solid fa-trash"></i></div>
-                </li>
-                <li>Give me tough love.<div><i class="fa-regular fa-circle-check"></i><i class="fa-solid fa-trash"></i>
-                    </div>
-                </li>
-                <li>I just wanna one of the boy tonight.<div><i class="fa-regular fa-circle-check"></i><i
-                            class="fa-solid fa-trash"></i></div>
-                </li>
             </ul>
         </div>
     </div>
